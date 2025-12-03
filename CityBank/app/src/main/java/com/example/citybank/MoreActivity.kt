@@ -22,6 +22,9 @@ class MoreActivity : AppCompatActivity() {
     lateinit var btnFavouriteAccounts: Button
     lateinit var btnBankTransfer: Button
 
+//    var mail = intent.getStringExtra("mail")
+//    var pass = intent.getStringExtra("pass")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +58,8 @@ class MoreActivity : AppCompatActivity() {
         }
         btnPersonalProfile.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+//            intent.putExtra("mail", mail)
+//            intent.putExtra("pass", pass)
             startActivity(intent)
         }
         btnMobileRecharge.setOnClickListener {
@@ -62,7 +67,7 @@ class MoreActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnCityCreditCard.setOnClickListener {
-            val intent = Intent(this, CardActivity::class.java)
+            val intent = Intent(this, VirtualCreditCardActivity::class.java)
             startActivity(intent)
         }
         btnInsurance.setOnClickListener {
@@ -75,6 +80,22 @@ class MoreActivity : AppCompatActivity() {
         }
         btnValueAddedServices.setOnClickListener {
             val intent = Intent(this, ValueAddedServicesActivity::class.java)
+            startActivity(intent)
+        }
+        btnVisaInstantPayment.setOnClickListener {
+            val intent = Intent(this, VisaInstantPaymentActivity::class.java)
+            startActivity(intent)
+        }
+        btnPaymentHistory.setOnClickListener {
+            val intent = Intent(this, PaymentHistoryActivity::class.java)
+            startActivity(intent)
+        }
+        btnFavouriteAccounts.setOnClickListener {
+            val intent = Intent(this, FavouriteAccountsActivity::class.java)
+            startActivity(intent)
+        }
+        btnBankTransfer.setOnClickListener {
+            val intent = Intent(this, BankTransferActivity::class.java)
             startActivity(intent)
         }
 

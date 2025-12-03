@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ValueAddedServicesActivity">
+    tools:context=".VisaInstantPaymentActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -35,29 +35,29 @@
     </androidx.cardview.widget.CardView>
 
     <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="409dp"
-        android:layout_height="564dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="1dp"
+        android:id="@+id/imageButton6"
+        android:layout_width="410dp"
+        android:layout_height="576dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:srcCompat="@drawable/donation" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:srcCompat="@drawable/unpaid" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="300dp"
-        android:text="Donation"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="14dp"
+        android:text="Visa Instant Payment"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />

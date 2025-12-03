@@ -15,6 +15,9 @@ class DashboardActivity : AppCompatActivity() {
     lateinit var backBtn: Button
     lateinit var cardImageView: ImageView
 
+//    var mail = intent.getStringExtra("mail")
+//    var pass = intent.getStringExtra("pass")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +45,8 @@ class DashboardActivity : AppCompatActivity() {
         }
         backBtn.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
+//            intent.putExtra("mail", mail)
+//            intent.putExtra("pass", pass)
             startActivity(intent)
         }
         cardImageView.setOnClickListener {

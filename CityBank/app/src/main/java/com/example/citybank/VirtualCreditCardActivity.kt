@@ -3,43 +3,38 @@ package com.example.citybank
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RechargeActivity : AppCompatActivity() {
-    lateinit var backBtn: Button
-    lateinit var btnSubmit3: Button
-    lateinit var num: EditText
-    lateinit var amount: EditText
+class VirtualCreditCardActivity : AppCompatActivity() {
+    lateinit var backBtn: TextView
+    lateinit var btnSubmit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_recharge)
+        setContentView(R.layout.activity_virtual_credit_card)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         backBtn = findViewById(R.id.menuBtn)
+        btnSubmit = findViewById(R.id.btnSubmit)
+
         backBtn.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
             startActivity(intent)
             finish()
         }
-        btnSubmit3 = findViewById(R.id.btnSubmit3)
-
-        num = findViewById(R.id.editTextPhone2)
-        amount = findViewById(R.id.editTextPhone)
-
-        btnSubmit3.setOnClickListener {
-//            num.text = num.text.toString()
-//            amount.text = amount.text.toString()
-            Toast.makeText(this, "Successfully Recharged", Toast.LENGTH_SHORT).show()
+        btnSubmit.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

@@ -23,7 +23,7 @@ class CardActivity : AppCompatActivity() {
 
         backBtn = findViewById(R.id.menuBtn)
         backBtn.setOnClickListener {
-            val intent = Intent(this, MoreActivity::class.java)
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
             finish()
         }
