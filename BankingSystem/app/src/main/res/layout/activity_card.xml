@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+
+    <Button
+        android:id="@+id/payBtn"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Visa Instant Payment"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <Button
+        android:id="@+id/insBtn"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Insurance"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <Button
+        android:id="@+id/vcBtn5"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Saved Accounts"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <Button
+        android:id="@+id/billBtn"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Bills and Fees"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <Button
+        android:id="@+id/recBtn"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Recharge"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view11"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="2dp"
+        android:layout_height="632dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recBtn"
+        app:layout_constraintStart_toEndOf="@+id/vcBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="156dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="162dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="410dp"
+        android:layout_height="99dp"
+        android:background="@drawable/header_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recBtn" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:text="Card Activity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/ic_back5"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="71dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/vc"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/vcBtn"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Apply for virtual card"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/recharge"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/bills"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/insurance"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="417dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/savedacc"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="83dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/payment"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
