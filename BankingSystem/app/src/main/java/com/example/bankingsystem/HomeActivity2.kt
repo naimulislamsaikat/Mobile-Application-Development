@@ -40,7 +40,7 @@ class HomeActivity2 : AppCompatActivity() {
         textView51 = findViewById(R.id.textView51)
 
         ic_Back.setOnClickListener{
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

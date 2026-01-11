@@ -41,7 +41,7 @@ class CardActivity : AppCompatActivity() {
             finish()
         }
         vcBtn.setOnClickListener {
-            val intent = Intent(this, CardActivity::class.java)
+            val intent = Intent(this, CreateActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -50,11 +50,11 @@ class CardActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-//        billBtn.setOnClickListener {
-//            val intent = Intent(this, BillsActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+        billBtn.setOnClickListener {
+            val intent = Intent(this, BillActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
         vcBtn5.setOnClickListener {
             val intent = Intent(this, SavedAccountActivity::class.java)
             startActivity(intent)

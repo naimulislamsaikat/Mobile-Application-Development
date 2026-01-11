@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="915dp"
+    tools:context=".BillActivity">
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="410dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/header_red"
+        app:layout_constraintBottom_toTopOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="49dp"
+        android:text="Bill and Fees"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view20"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintStart_toStartOf="@+id/view20"
+        app:layout_constraintTop_toTopOf="@+id/view20" />
+
+    <ImageView
+        android:id="@+id/ic_back8"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="367dp"
+        android:layout_marginBottom="55dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="@+id/view20"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintStart_toStartOf="@+id/view20"
+        app:layout_constraintTop_toTopOf="@+id/view20"
+        app:tint="@color/white" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="380dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="13dp"
+        android:background="#E7E5E5"
+        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/current" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/gas" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/water" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toStartOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/credit" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/other" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:srcCompat="@drawable/govfee" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:srcCompat="@drawable/net" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20"
+        app:srcCompat="@drawable/history" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="386dp"
+        android:layout_height="505dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view21"
+        app:srcCompat="@drawable/cbill" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

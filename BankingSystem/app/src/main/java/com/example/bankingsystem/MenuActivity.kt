@@ -18,6 +18,7 @@ class MenuActivity : AppCompatActivity() {
     lateinit var AccLbtn: Button
     lateinit var CardLbtn: Button
     lateinit var btn: Button
+    lateinit var logoutbtn: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,7 @@ class MenuActivity : AppCompatActivity() {
         AccLbtn = findViewById(R.id.AccLbtn)
         CardLbtn = findViewById(R.id.CardLbtn)
         btn = findViewById(R.id.btn)
+        logoutbtn = findViewById(R.id.logoutbtn)
 
         ic_back2.setOnClickListener{
             val intent = Intent(this, HomeActivity::class.java)
@@ -75,6 +77,11 @@ class MenuActivity : AppCompatActivity() {
         }
         btn.setOnClickListener {
             val intent = Intent(this, TearmsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        logoutbtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

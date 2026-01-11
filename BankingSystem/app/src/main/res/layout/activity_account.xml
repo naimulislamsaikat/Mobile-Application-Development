@@ -126,37 +126,43 @@
         android:id="@+id/view13"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="179dp"
         android:layout_weight="1"
         android:background="@color/red"
         android:backgroundTint="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transferBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
 
     <View
         android:id="@+id/view14"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginTop="192dp"
         android:layout_weight="1"
         android:background="@color/red"
         android:backgroundTint="@color/red"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="449dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view13"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view12"
         android:layout_width="2dp"
-        android:layout_height="632dp"
-        android:layout_marginStart="10dp"
+        android:layout_height="800dp"
         android:layout_marginTop="99dp"
         android:layout_weight="1"
         android:background="@color/red"
         android:backgroundTint="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transferBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
 
     <View
         android:id="@+id/view6"

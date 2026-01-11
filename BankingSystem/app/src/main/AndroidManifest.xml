@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankingSystem">
         <activity
+            android:name=".BankTransferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillActivity"
+            android:exported="false" />
+        <activity
             android:name=".SuccessActivity"
             android:exported="false" />
         <activity

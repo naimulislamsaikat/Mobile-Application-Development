@@ -2,39 +2,32 @@ package com.example.bankingsystem
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SavedAccountActivity : AppCompatActivity() {
-    lateinit var menuBtn: Button
-    lateinit var imageButton5: ImageButton
+class PayBillActivity : AppCompatActivity() {
+    lateinit var ic_back9: ImageView
+    lateinit var imageView22: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_saved_account)
+        setContentView(R.layout.activity_pay_bill)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        menuBtn = findViewById(R.id.menuBtn)
-        imageButton5 = findViewById(R.id.imageButton5)
+        ic_back9 = findViewById(R.id.ic_back9)
+        imageView22 = findViewById(R.id.imageView22)
 
-        menuBtn.setOnClickListener {
-            val intent = Intent(this, CardActivity::class.java)
+        ic_back9.setOnClickListener {
+            val intent = Intent(this, BillActivity::class.java)
             startActivity(intent)
             finish()
         }
-        imageButton5.setOnClickListener {
-            val intent = Intent(this, SuccessActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
     }
 }

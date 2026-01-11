@@ -2,52 +2,49 @@ package com.example.bankingsystem
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class AccountActivity : AppCompatActivity() {
-    lateinit var ic_back5: ImageView
-    lateinit var transferBtn: Button
-    lateinit var infoBtn: Button
-    lateinit var reqBtn: Button
-    lateinit var statusBtn: Button
+class BankTransferActivity : AppCompatActivity() {
+    lateinit var ic_back6: ImageView
+    lateinit var imageButton: ImageButton
+    lateinit var imageButton2: ImageButton
+    lateinit var imageButton3: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_account)
+        setContentView(R.layout.activity_bank_transfer)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        ic_back5 = findViewById(R.id.ic_back5)
-        infoBtn = findViewById(R.id.infoBtn)
-        transferBtn = findViewById(R.id.transferBtn)
-        reqBtn = findViewById(R.id.reqBtn)
-        statusBtn = findViewById(R.id.statusBtn)
+        ic_back6 = findViewById(R.id.ic_back6)
+        imageButton = findViewById(R.id.imageButton)
+        imageButton2 = findViewById(R.id.imageButton2)
+        imageButton3 = findViewById(R.id.imageButton3)
 
-
-        ic_back5.setOnClickListener {
-            val intent = Intent(this, MenuActivity::class.java)
+        ic_back6.setOnClickListener {
+            val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent)
             finish()
         }
-        infoBtn.setOnClickListener {
-            val intent = Intent(this, SavedAccountActivity::class.java)
+        imageButton.setOnClickListener {
+            val intent = Intent(this, SuccessActivity::class.java)
             startActivity(intent)
             finish()
         }
-        transferBtn.setOnClickListener {
-            val intent = Intent(this, BankTransferActivity::class.java)
+        imageButton2.setOnClickListener {
+            val intent = Intent(this, SuccessActivity::class.java)
             startActivity(intent)
             finish()
         }
-        statusBtn.setOnClickListener {
+        imageButton3.setOnClickListener {
             val intent = Intent(this, SuccessActivity::class.java)
             startActivity(intent)
             finish()
