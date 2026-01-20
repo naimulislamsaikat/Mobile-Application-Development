@@ -17,6 +17,7 @@ class LoanActivity : AppCompatActivity() {
     lateinit var button2: Button
     lateinit var textView6: TextView
     lateinit var textView3: TextView
+    lateinit var button: Button
 
     val db = FirebaseDatabase.getInstance()
     val ref = db.reference.child("Users")
@@ -34,6 +35,8 @@ class LoanActivity : AppCompatActivity() {
         button2 = findViewById(R.id.button2)
         textView6 = findViewById(R.id.textView6)
         textView3 = findViewById(R.id.textView3)
+        button = findViewById(R.id.button)
+
 
         ref.child("User1").child("Loan").get().addOnSuccessListener {
             textView6.text = it.value.toString()
@@ -53,6 +56,11 @@ class LoanActivity : AppCompatActivity() {
         }
         button2.setOnClickListener {
             Toast.makeText(this, "Loan limit exceeded. Repay first", Toast.LENGTH_SHORT).show()
+        }
+        button.setOnClickListener {
+            val intent = Intent(this, LoanPayActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
 

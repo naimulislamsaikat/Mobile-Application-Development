@@ -40,6 +40,7 @@ class RechargeActivity : AppCompatActivity() {
         }
         payBtn.setOnClickListener {
             if(amount.text.toString().isEmpty() && editTextPhone.text.toString().isEmpty()) {
+                Error("Required")
                 Toast.makeText(this, "Please type all the fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }

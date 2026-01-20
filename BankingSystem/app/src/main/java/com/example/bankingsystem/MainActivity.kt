@@ -1,6 +1,7 @@
 package com.example.bankingsystem
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -10,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
@@ -21,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var tvForgot: TextView
     lateinit var btnLogin: Button
     lateinit var btnLogin2: Button
+
+    lateinit var sharePreference: SharedPreferences
     val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +43,17 @@ class MainActivity : AppCompatActivity() {
         tvForgot = findViewById(R.id.tvForgot)
         btnLogin = findViewById(R.id.btnLogin)
         btnLogin2 = findViewById(R.id.btnLogin2)
+
+        btnLogin2.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        tvForgot.setOnClickListener {
+            val intent = Intent(this, ForgotActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         btnLogin.setOnClickListener {
             if(etUserId.text.toString().isEmpty() && etPassword.text.toString().isEmpty()){
@@ -61,4 +76,42 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+    override fun onPause()
+    {
+        super.onPause()
+        saveData()
+    }
+    override fun onResume() {
+        super.onResume()
+        retrieveData()
+    }
+    fun saveData()
+    {
+        var data:String = etUserId.text.toString()
+        var data2:String = etPassword.text.toString()
+
+        sharePreference = getSharedPreferences("AppData", MODE_PRIVATE)
+
+        var editor = sharePreference.edit()
+
+        editor.putString("value", data)
+        editor.putString("value1", data2)
+        editor.apply()
+    }
+
+
+    fun retrieveData()
+    {
+        sharePreference = getSharedPreferences("AppData", MODE_PRIVATE)
+
+        var editor = sharePreference.edit()
+
+        var data=sharePreference.getString("value","")
+        etUserId.setText(data)
+        etPassword.setText(sharePreference.getString("value1",""))
+
+    }
+
 }
+
+
