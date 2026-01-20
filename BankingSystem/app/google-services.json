@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "220851804936",
+    "firebase_url": "https://banking-system-3fe3e-default-rtdb.firebaseio.com",
+    "project_id": "banking-system-3fe3e",
+    "storage_bucket": "banking-system-3fe3e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220851804936:android:bc268cd85e8ce12e116abd",
+        "android_client_info": {
+          "package_name": "com.example.bankingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220851804936-un2g6kfsgpjogeponsvb7j631ivdo7d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankingsystem",
+            "certificate_hash": "41fd4a27c6e4e1f67f8b6ac5e0224d5e0b72f7bc"
+          }
+        },
+        {
+          "client_id": "220851804936-4odqo9v7mept41b8efol55v8805hhjje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo7Aea5dmdTT4jy28WXqWwfVJbZ1JP8ZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220851804936-4odqo9v7mept41b8efol55v8805hhjje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

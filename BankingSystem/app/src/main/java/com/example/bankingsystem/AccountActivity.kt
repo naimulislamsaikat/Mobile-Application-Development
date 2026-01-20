@@ -52,5 +52,11 @@ class AccountActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        reqBtn.setOnClickListener {
+            val intent = Intent(this, SuccessActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

@@ -118,12 +118,13 @@
 
     <TextView
         android:id="@+id/textView47"
-        android:layout_width="214dp"
-        android:layout_height="30dp"
+        android:layout_width="220dp"
+        android:layout_height="41dp"
         android:layout_marginStart="23dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="122dp"
         android:hint="User Name"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toTopOf="@+id/view3" />
@@ -136,6 +137,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="122dp"
         android:hint="Account type"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
@@ -143,12 +145,14 @@
     <TextView
         android:id="@+id/textView49"
         android:layout_width="214dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="124dp"
         android:hint="Acc. Number"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
